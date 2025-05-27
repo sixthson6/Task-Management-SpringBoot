@@ -1,0 +1,71 @@
+### GET request to example server
+GET http://localhost:8080/tasks
+
+### Create a new task
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{
+  "title": "Write Unit Tests",
+  "description": "Write tests for the service layer",
+  "dueDate": "2025-06-10",
+  "status": "Pending"
+}
+
+### Create a new task
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{
+  "title": "Write Documentation",
+  "description": "Explain how to use the REST API",
+  "dueDate": "2025-06-10",
+  "status": "Pending"
+}
+### 1. Create a new task
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{
+  "title": "Finish Lab Assignment",
+  "description": "Complete Spring Boot and Docker lab work",
+  "dueDate": "2025-06-01",
+  "status": "Pending"
+}
+
+### 2. Create another task
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{
+  "title": "Prepare Presentation",
+  "description": "Build slides for project demo",
+  "dueDate": "2025-06-05",
+  "status": "Pending"
+}
+
+### 3. Get all tasks
+GET http://localhost:8080/tasks
+
+### 4. Get a task by ID (use a valid ID like 1 or 2)
+GET http://localhost:8080/tasks/1
+
+### 5. Update a task by ID
+PUT http://localhost:8080/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Finish Lab Assignment",
+  "description": "Lab work done with testing",
+  "dueDate": "2025-06-02",
+  "status": "Completed"
+}
+
+### 6. Try to get a non-existing task (should return 404)
+GET http://localhost:8080/tasks/999
+
+### 7. Delete a task by ID
+DELETE http://localhost:8080/tasks/2
+
+### 8. Confirm deletion by trying to fetch deleted task (should return 404)
+GET http://localhost:8080/tasks/2
