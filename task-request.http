@@ -1,8 +1,8 @@
 ### GET request to example server
-GET http://localhost:8080/tasks
+GET http://localhost:8000/tasks
 
 ### Create a new task
-POST http://localhost:8080/tasks
+POST http://localhost:8000/tasks
 Content-Type: application/json
 
 {
@@ -13,7 +13,7 @@ Content-Type: application/json
 }
 
 ### Create a new task
-POST http://localhost:8080/tasks
+POST http://localhost:8000/tasks
 Content-Type: application/json
 
 {
