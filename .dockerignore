@@ -1,0 +1,7 @@
+target/*.original
+target/*-sources.jar
+target/test-classes/
+target/generated-sources/
+.idea/
+*.iml
+*.log
